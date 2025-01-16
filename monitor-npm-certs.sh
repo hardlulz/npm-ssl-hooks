@@ -26,7 +26,7 @@
 SCRIPT_DIR=$(readlink -f -- "$0")
 SCRIPT_DIR=$(dirname -- "${SCRIPT_DIR}")
 
-source ${SCRIPT_DIR}/monitor-npm-certs.conf
+. ${SCRIPT_DIR}/monitor-npm-certs.conf
 
 # Request all currently present certificates from the NPM's database
 # The CERT_DOMAINS will contain a multiline string, something like this:
